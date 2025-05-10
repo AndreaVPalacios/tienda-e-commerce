@@ -1,0 +1,66 @@
+.cart {
+  z-index: 10;
+  color: #fff;
+  background-color: crimson;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  /* background-color:#cea97d; Eliminamos el fondo */
+  height: 60px;
+  position: absolute; /* Para colocarlo "encima" de la imagen */
+  width: 100%; /* Aseguramos que cubra toda la pantalla horizontalmente */
+  top: 0;
+  z-index: 10; /* Aseguramos que quede encima del contenido de la página */
+  font-family: Inter;
+}
+
+.navbar-section {
+  display: flex;
+  gap: 23px;
+  padding-left: 10px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #fff; /* Cambiamos el color a blanco para que resalte sobre la imagen */
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #dadada;
+}
+
+.navbar-logo img {
+  height: 80px;
+  object-fit: contain;
+  z-index: 10;
+  padding-right: 130px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 6px;
+}
+
+.icon-button img {
+  height: 24px;
+  width: 24px;
+  object-fit: contain;
+  /* filter: brightness(0) invert(1); Hace los íconos blancos */
+  transition: transform 0.2s ease;
+}
+
+.icon-button:hover img {
+  transform: scale(1.1);
+}
+
+  

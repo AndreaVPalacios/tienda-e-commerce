@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.filterButtons {
+  @apply px-8 py-3 my-4 mr-4 rounded-full bg-green-200 font-bold shadow-lg transition-all duration-300 hover:shadow-inner hover:shadow-emerald-900 hover:bg-emerald-50
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #473434;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Inter;
+}
+

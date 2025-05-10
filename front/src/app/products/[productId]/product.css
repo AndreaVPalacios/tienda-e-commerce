@@ -1,0 +1,134 @@
+/* Estilo general */
+.product-page {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+    font-family: Inter;
+  }
+  
+  /* Contenedor de la imagen */
+  .product-image-container {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  }
+  
+  /* Botones de navegación de imágenes */
+  .image-nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 36px;
+    color: rgb(71, 71, 71);
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .image-nav-button:hover {
+    transform: scale(1.2);
+    color: #969696;
+  }
+  
+  .image-nav-button.left {
+    left: 10px;
+  }
+  
+  .image-nav-button.right {
+    right: 10px;
+  }
+  
+  /* Detalles del producto */
+  .product-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .product-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .product-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #404641;
+  }
+  
+  /* Tallas */
+  .product-sizes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .size-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .size-button {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .size-button:hover {
+    background-color: #754949;
+    color: white;
+  }
+  
+  /* Botón de añadir al carrito */
+  .add-to-cart-button {
+    padding: 15px 20px;
+    background-color: #637581;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #3a485b;
+  }
+
+  .background {
+    background-color: black;
+    overflow: hidden;
+    width: 100%;
+    height: 65px; /* Una barra delgada */
+    display: flex;
+    align-items: center;
+    position: relative;
+  };
+  
+  
